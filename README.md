@@ -8,6 +8,7 @@
  - [Glide](https://github.com/bumptech/glide)
  - [Logger](https://github.com/orhanobut/logger)
 
-**项目中的 API 纯属学习交流使用，不得用于商业用途！**
+![](https://github.com/bayshier/MVPKotlin_Commonlib/blob/master/demo.png)
+
 
 
