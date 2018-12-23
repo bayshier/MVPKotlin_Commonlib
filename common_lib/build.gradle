@@ -1,0 +1,59 @@
+apply plugin: 'com.android.library'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions' //扩展插件
+
+apply plugin: 'kotlin-kapt'  //kapt3插件
+
+android {
+
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1') {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    // Support库
+    api rootProject.ext.supportLibs
+    // 网络请求库
+    api rootProject.ext.networkLibs
+    // RxJava2
+    api rootProject.ext.rxJavaLibs
+    api rootProject.ext.otherLibs
+    // APT dependencies(Kotlin内置的注解处理器)
+    kapt rootProject.ext.annotationProcessorLibs
+
+    //kotlin 支持库
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    //GlideOkHttp
+    api(rootProject.ext.glideOkhttp) {
+        exclude group: 'glide-parent'
+    }
+    //Logger
+    api 'com.orhanobut:logger:2.1.1'
+    //运行时权限
+    api'pub.devrel:easypermissions:1.2.0'
+
+    api project(':multiple-status-view')
+
+}
