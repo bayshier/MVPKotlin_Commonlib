@@ -6,7 +6,6 @@
  - [RxAndroid](https://github.com/ReactiveX/RxAndroid)
  - [Retrofit](https://github.com/square/retrofit)
  - [Glide](https://github.com/bumptech/glide)
- - [Logger](https://github.com/orhanobut/logger)
 
 ![](https://github.com/bayshier/MVPKotlin_Commonlib/blob/master/demo.png)
 
