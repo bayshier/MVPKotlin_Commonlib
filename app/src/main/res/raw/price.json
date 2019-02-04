@@ -1,0 +1,77 @@
+[
+  {
+    "name": "人民币",
+    "code": "CNY"
+  },
+  {
+    "name": "美元",
+    "code": "USD"
+  },
+  {
+    "name": "比特币",
+    "code": "BTC"
+  },
+  {
+    "name": "以太坊",
+    "code": "ETH"
+  },
+  {
+    "name": "日元",
+    "code": "JPY"
+  },
+  {
+    "name": "韩币",
+    "code": "KRW"
+  },
+  {
+    "name": "港币",
+    "code": "HKD"
+  },
+  {
+    "name": "新台币",
+    "code": "TWD"
+  },
+  {
+    "name": "卢布",
+    "code": "RUB"
+  },
+
+  {
+    "name": "卢比",
+    "code": "INR"
+  },
+
+
+  {
+    "name": "澳元",
+    "code": "AUD"
+  },
+  {
+    "name": "欧元",
+    "code": "EUR"
+  },
+  {
+    "name": "法郎",
+    "code": "CHF"
+  },
+  {
+    "name": "英镑",
+    "code": "GBP"
+  },
+  {
+    "name": "加元",
+    "code": "CAD"
+  },
+  {
+    "name": "印尼盾",
+    "code": "IDR"
+  },
+  {
+    "name": "巴西雷亚尔",
+    "code": "BRL"
+  },
+  {
+    "name": "墨西哥比索",
+    "code": "MXN"
+  }
+]

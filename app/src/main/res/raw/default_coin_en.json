@@ -1,0 +1,135 @@
+{
+  "status": "true",
+  "code": "0",
+  "msg": "",
+  "time":1517537524,
+  "plat": [
+    {
+      "code": "huobipro",
+      "IsSelect": true,
+      "title": "HuobiPro"
+    },
+    {
+      "code": "binance",
+      "IsSelect": true,
+      "title": "Binance"
+    },
+    {
+      "code": "okex",
+      "IsSelect": true,
+      "title": "OKex"
+    },
+    {
+      "code": "upbit",
+      "IsSelect": true,
+      "title": "Upbit"
+    },
+    {
+      "code": "bitfinex",
+      "IsSelect": true,
+      "title": "Bitfinex"
+    },
+    {
+      "code": "bittrex",
+      "IsSelect": true,
+      "title": "Bittrex"
+    },
+    {
+      "code": "poloniex",
+      "IsSelect": true,
+      "title": "Poloniex"
+    },
+    {
+      "code": "bithumb",
+      "IsSelect": true,
+      "title": "Bithumb"
+    },
+    {
+      "code": "zb",
+      "IsSelect": false,
+      "title": "ZB-Com"
+    },
+    {
+      "code": "kucoin",
+      "IsSelect": true,
+      "title": "KuCoin"
+    },
+    {
+      "code": "hitbtc",
+      "IsSelect": true,
+      "title": "Hitbtc"
+    },
+    {
+      "code": "gdax",
+      "IsSelect": false,
+      "title": "Gdax"
+    },
+    {
+      "code": "gate-io",
+      "IsSelect": false,
+      "title": "Gate-IO"
+    },
+    {
+      "code": "coinw",
+      "IsSelect": false,
+      "title": "Coinw"
+    },
+    {
+      "code": "bibox",
+      "IsSelect": true,
+      "title": "Bibox"
+    },
+    {
+      "code": "kraken",
+      "IsSelect": true,
+      "title": "Kraken"
+    },
+    {
+      "code": "yobit",
+      "IsSelect": false,
+      "title": "Yobit"
+    },
+    {
+      "code": "bit-z",
+      "IsSelect": false,
+      "title": "Bit-z"
+    },
+    {
+      "code": "liqui",
+      "IsSelect": false,
+      "title": "Liqui"
+    },
+    {
+      "code": "etherdelta",
+      "IsSelect": false,
+      "title": "Etherdelta"
+    }
+  ],
+  "coin": [
+    {
+      "code": "bitcoin",
+      "IsSelect": true,
+      "title": "BTC"
+    },
+    {
+      "code": "ethereum",
+      "IsSelect": true,
+      "title": "ETH"
+    },
+    {
+      "code": "ripple",
+      "IsSelect": true,
+      "title": "XRP"
+    },
+    {
+      "code": "bitcoin-cash",
+      "IsSelect": true,
+      "title": "BCH"
+    },
+    {
+      "code": "litecoin",
+      "IsSelect": false,
+      "title": "LTC"
+    }
+  ]
+}

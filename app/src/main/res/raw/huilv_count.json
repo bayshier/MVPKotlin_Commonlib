@@ -1,0 +1,77 @@
+[
+  {
+    "img": "ic_zhongguo.webp",
+    "code": "CNY"
+  },
+  {
+    "img": "ic_meiguo.webp",
+    "code": "USD"
+  },
+  {
+    "img": "bitcoin.webp",
+    "code": "BTC"
+  },
+  {
+    "img": "ethereum.webp",
+    "code": "ETH"
+  },
+  {
+    "img": "ic_riben.webp",
+    "code": "JPY"
+  },
+  {
+    "img": "ic_hanguo.webp",
+    "code": "KRW"
+  },
+  {
+    "img": "ic_xianggang.webp",
+    "code": "HKD"
+  },
+  {
+    "img": "ic_taiwan.webp",
+    "code": "TWD"
+  },
+  {
+    "img": "ic_eluosi.webp",
+    "code": "RUB"
+  },
+
+  {
+    "img": "ic_yindu.webp",
+    "code": "INR"
+  },
+
+
+  {
+    "img": "ic_aodaliya.webp",
+    "code": "AUD"
+  },
+  {
+    "img": "eu.webp",
+    "code": "EUR"
+  },
+  {
+    "img": "fr.webp",
+    "code": "CHF"
+  },
+  {
+    "img": "ic_yingguo.webp",
+    "code": "GBP"
+  },
+  {
+    "img": "ic_jianada.webp",
+    "code": "CAD"
+  },
+  {
+    "img": "id.webp",
+    "code": "IDR"
+  },
+  {
+    "img": "ic_baxi.webp",
+    "code": "BRL"
+  },
+  {
+    "img": "ic_moxige.webp",
+    "code": "MXN"
+  }
+]
