@@ -2,6 +2,8 @@
 # 一套完整的数字货币与法币汇率转换以及货币符号匹配展示规则demo
 # KotlinMvp 纯demo 无杂质 的MVP基础框架
 
+![](https://github.com/bayshier/MVPKotlin_Commonlib/blob/master/demo.gif)
+
 #### 1. 法币价格数据展示规则
 - x >= 1000 0 0000		无小数 //容错，暂时没有可能发生
 - 100 <= x < 1000 0 0000	2位小数 //例：$12345.12
