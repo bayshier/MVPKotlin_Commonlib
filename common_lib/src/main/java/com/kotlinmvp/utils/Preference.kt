@@ -7,7 +7,7 @@ import java.io.*
 import kotlin.reflect.KProperty
 
 /**
- * easin/12/11.
+ *  12/11.
  * desc:kotlin委托属性+SharedPreference实例
  */
 class Preference<T> constructor(val context: Context, val name: String, private val default: T) {

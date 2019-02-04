@@ -1,7 +1,7 @@
 package com.kotlinmvp.net
 
 /**
- * easin/11/16.
+ *  11/16.
  * 封装返回的数据
  */
 class BaseResponse<T>(val code :Int,

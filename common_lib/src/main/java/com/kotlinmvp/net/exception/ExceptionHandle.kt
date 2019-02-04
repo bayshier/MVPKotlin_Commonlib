@@ -12,7 +12,6 @@ import java.net.UnknownHostException
 import java.text.ParseException
 
 /**
- * easin/12/5.
  * desc: 异常处理类
  */
 

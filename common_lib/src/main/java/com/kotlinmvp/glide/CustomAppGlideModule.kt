@@ -12,7 +12,6 @@ import com.bumptech.glide.module.AppGlideModule
 import java.io.InputStream
 
 /**
- * easin/12/1.
  * desc:
  */
 @GlideModule

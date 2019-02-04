@@ -8,7 +8,7 @@ import android.os.Build
 import java.security.MessageDigest
 
 /**
- * easin/12/6.
+ *  12/6.
  * desc: APP 相关的工具类
  */
 

@@ -13,7 +13,7 @@ import android.view.ViewAnimationUtils
 import android.view.animation.AccelerateDecelerateInterpolator
 
 /**
- * easin/12/1.
+ *  12/1.
  * desc: View 动画工具类
  */
 

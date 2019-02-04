@@ -1,5 +1,6 @@
 package com.example.lanyixin.myapplication
 
+import com.example.lanyixin.myapplication.api.ResultBase
 import com.kotlinmvp.mvp.contract.DemoContract
 import com.kotlinmvp.base.BaseActivity
 import com.kotlinmvp.mvp.presenter.DemoPresenter
@@ -21,13 +22,13 @@ class MainActivity : BaseActivity(), DemoContract.View {
     override fun showError(errorMsg: String, errorCode: Int) {
     }
 
-    override fun setHotWordData(string: ArrayList<String>) {
+    override fun setHotWordData(string: ResultBase<List<String>>) {
 
         val stringBuffer = StringBuilder()
 
-        for (item in string) {
+        for (item in string.data) {
             println(item)
-            stringBuffer.append(item)
+            stringBuffer.append(item+" ")
         }
         test.text = stringBuffer.toString()
     }

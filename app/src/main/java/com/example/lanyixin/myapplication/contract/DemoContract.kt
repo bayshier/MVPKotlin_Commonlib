@@ -1,11 +1,12 @@
 package com.kotlinmvp.mvp.contract
 
+import com.example.lanyixin.myapplication.api.ResultBase
 import com.kotlinmvp.base.IBaseView
 import com.kotlinmvp.base.IPresenter
 
 
 /**
- * desc: 搜索契约类
+ * 契约类
  */
 interface DemoContract {
 
@@ -16,7 +17,7 @@ interface DemoContract {
         /**
          * 获取数据
          */
-        fun setHotWordData(string: ArrayList<String>)
+        fun setHotWordData(string: ResultBase<List<String>>)
     }
 
 

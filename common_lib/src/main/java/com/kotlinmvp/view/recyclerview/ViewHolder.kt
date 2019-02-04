@@ -10,7 +10,7 @@ import android.widget.TextView
 
 @Suppress("UNCHECKED_CAST")
 /**
- * easin/11/22.
+ *  11/22.
  * desc:
  */
 

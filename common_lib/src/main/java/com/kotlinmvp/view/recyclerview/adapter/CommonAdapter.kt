@@ -10,7 +10,7 @@ import com.kotlinmvp.view.recyclerview.MultipleType
 import com.kotlinmvp.view.recyclerview.ViewHolder
 
 /**
- * easin/11/22.
+ *  11/22.
  * desc: 通用的 Adapter
  */
 

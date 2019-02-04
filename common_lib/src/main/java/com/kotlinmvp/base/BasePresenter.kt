@@ -6,7 +6,7 @@ import io.reactivex.disposables.Disposable
 
 
 /**
- * easin/11/16.
+ *  11/16.
  *
  */
 open class BasePresenter<T : IBaseView> : IPresenter<T> {

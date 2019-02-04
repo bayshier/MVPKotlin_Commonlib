@@ -5,6 +5,7 @@ import android.app.Application
 import android.content.Context
 import android.os.Bundle
 import android.util.Log
+import com.facebook.stetho.Stetho
 import com.orhanobut.logger.AndroidLogAdapter
 import com.orhanobut.logger.Logger
 import com.orhanobut.logger.PrettyFormatStrategy
@@ -28,6 +29,15 @@ class MyApplication : Application(){
         context = applicationContext
         initConfig()
         registerActivityLifecycleCallbacks(mActivityLifecycleCallbacks)
+
+        //Stetho
+        Stetho.initialize(
+            Stetho.newInitializerBuilder(context)
+                .enableDumpapp(Stetho.defaultDumperPluginsProvider(context))
+                .enableWebKitInspector(Stetho.defaultInspectorModulesProvider(context))
+                .build()
+        )
+
     }
 
     /**

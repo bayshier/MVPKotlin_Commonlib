@@ -4,7 +4,6 @@ import android.content.Context
 import android.util.DisplayMetrics
 
 /**
- * easin/11/27.
  * desc:
  */
 

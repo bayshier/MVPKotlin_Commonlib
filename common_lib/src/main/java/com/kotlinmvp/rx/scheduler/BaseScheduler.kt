@@ -4,7 +4,7 @@ import io.reactivex.*
 import org.reactivestreams.Publisher
 
 /**
- * easin/11/17.
+ *    .
  * desc:RxJava2.x 5中基础相应类型
  */
 

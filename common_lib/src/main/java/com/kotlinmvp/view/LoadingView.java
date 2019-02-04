@@ -17,7 +17,7 @@ import com.kotlinmvp.R;
 import java.lang.ref.WeakReference;
 
 /**
- * easin/12/4.
+ *  12/4.
  * desc:LoadingView 加载动画
  */
 

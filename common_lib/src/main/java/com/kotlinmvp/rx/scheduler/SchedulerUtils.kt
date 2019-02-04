@@ -1,7 +1,7 @@
 package com.kotlinmvp.rx.scheduler
 
 /**
- * easin/11/17.
+ *    .
  * desc:
  */
 

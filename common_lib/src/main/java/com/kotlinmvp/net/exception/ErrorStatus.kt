@@ -1,7 +1,6 @@
 package com.kotlinmvp.net.exception
 
 /**
- * easin/12/5.
  * desc:
  */
 object ErrorStatus {

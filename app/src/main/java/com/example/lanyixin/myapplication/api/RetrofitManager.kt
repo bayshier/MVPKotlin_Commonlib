@@ -3,6 +3,7 @@ package com.example.lanyixin.myapplication.api
 import android.content.Context
 import android.support.constraint.solver.Cache
 import com.example.lanyixin.myapplication.MyApplication
+import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.kotlinmvp.api.ApiService
 import com.kotlinmvp.utils.AppUtils
 import com.kotlinmvp.utils.NetworkUtil
@@ -18,13 +19,13 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.io.File
 import java.util.concurrent.TimeUnit
 
-object RetrofitManager{
+object RetrofitManager {
 
     val service: ApiService by lazy(LazyThreadSafetyMode.SYNCHRONIZED) {
         getRetrofit().create(ApiService::class.java)
     }
 
-    private var token: String by Preference(MyApplication.context,"token", "")
+    private var token: String by Preference(MyApplication.context, "token", "")
 
     /**
      * 设置头
@@ -75,15 +76,15 @@ object RetrofitManager{
     private fun getRetrofit(): Retrofit {
         // 获取retrofit的实例
         return Retrofit.Builder()
-            .baseUrl( "http://baobab.kaiyanapp.com/api/")  //自己配置
+            .baseUrl("https://app.fxh.io/")  //自己配置
             .client(getOkHttpClient(MyApplication.context))
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-
     }
 
     private fun getOkHttpClient(context: Context): OkHttpClient {
+
         //添加一个log拦截器,打印所有的log
         val httpLoggingInterceptor = HttpLoggingInterceptor()
         //可以设置请求过滤的水平,body,basic,headers
@@ -95,14 +96,15 @@ object RetrofitManager{
 
         return OkHttpClient.Builder()
 //                .addInterceptor(addQueryParameterInterceptor())  //参数添加
-                .addInterceptor(addHeaderInterceptor()) // token过滤
+            .addInterceptor(addHeaderInterceptor()) // token过滤
 //              .addInterceptor(addCacheInterceptor())
-                .addInterceptor(httpLoggingInterceptor) //日志,所有的请求响应度看到
+            .addInterceptor(httpLoggingInterceptor) //日志,所有的请求响应度看到
 //                .cache(cache)  //添加缓存
-                .connectTimeout(60L, TimeUnit.SECONDS)
-                .readTimeout(60L, TimeUnit.SECONDS)
-                .writeTimeout(60L, TimeUnit.SECONDS)
-                .build()
+            .addNetworkInterceptor(StethoInterceptor())//抓包
+            .connectTimeout(60L, TimeUnit.SECONDS)
+            .readTimeout(60L, TimeUnit.SECONDS)
+            .writeTimeout(60L, TimeUnit.SECONDS)
+            .build()
     }
 
 

@@ -7,7 +7,6 @@ import java.io.InputStream
 import java.util.regex.Pattern
 
 /**
- * easin/12/1.
  * desc:
  */
 

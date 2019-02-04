@@ -1,5 +1,6 @@
 package com.example.lanyixin.myapplication.model
 
+import com.example.lanyixin.myapplication.api.ResultBase
 import com.example.lanyixin.myapplication.api.RetrofitManager
 import com.kotlinmvp.rx.scheduler.SchedulerUtils
 import java.util.*
@@ -11,8 +12,8 @@ class DemoModel {
     /**
      * 请求数据
      */
-    fun requestHotWordData(): Observable<ArrayList<String>> {
-        return RetrofitManager.service.getHotWord()
+    fun requestHotWordData(): Observable<ResultBase<List<String>>> {
+        return RetrofitManager.service.getHotsearch()
                 .compose(SchedulerUtils.ioToMain())
     }
 

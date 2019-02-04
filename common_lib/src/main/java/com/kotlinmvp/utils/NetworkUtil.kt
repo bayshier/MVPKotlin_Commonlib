@@ -12,7 +12,6 @@ import java.net.URL
 
 
 /**
- * easin/11/13.
  */
 class NetworkUtil{
 

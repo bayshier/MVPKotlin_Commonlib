@@ -1,7 +1,7 @@
 package com.kotlinmvp.view.recyclerview
 
 /**
- * easin/11/22.
+ *  11/22.
  * desc: 多布局条目类型
  */
 
